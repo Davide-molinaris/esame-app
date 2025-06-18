@@ -1,0 +1,77 @@
+<div class='flex flex-col'>
+
+  <div class='flex flex-col'>
+
+<%= render partial: 'components/navbar' ,
+    locals:{
+        voli: "voli",
+        hotels: "hotels",
+         ristoranti: "ristoranti",
+         itinerari: "itinerari",
+    }
+%>
+
+<% render partial: 'components/titolo'
+%>
+
+<%= render partial: 'components/buh'%>
+
+
+
+ 
+ 
+ 
+ 
+ 
+      <%= render partial: 'components/card',
+      locals:{
+      titolo: "Nord America" ,
+       paragrafo: "scopri le meraviglie del nord america in un viaggio organizzato per farti scoprire le principali attrazioni che caratterizzano questo paese pieno di storia" ,
+      immagine: "nord america.png" ,
+
+
+         }
+
+             %>
+
+
+<%= render partial:"components/news"%>
+
+
+
+
+
+
+                      <%= render partial: 'components/eventi',
+    locals: {
+      titolo: 'festival del jazz',
+      bottone: 'Acquista i tickets!'
+                        }    
+                           %>
+ 
+ 
+ 
+
+
+ 
+ 
+  
+
+
+
+
+
+
+                 <%= render partial: 'components/footer' 
+  
+%>
+<%= render partial: 'components/skill'
+%>
+ 
+
+ 
+
+
+</div>
+</div>
+
